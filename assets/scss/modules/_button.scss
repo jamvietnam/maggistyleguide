@@ -7,9 +7,11 @@
   font-size: rem-calc(20);
   background-color: $maggi-primary;
   color: $maggi-secondary;
+  text-decoration: none;
 
   &:hover, &:focus{
     background-color: $maggi-primary-shade;
+    text-decoration: none;
   }
 }
 
@@ -20,7 +22,7 @@
 
 button, button.secondary, button.alert {
   @extend button;
-/*  @extend .round;*/
+  @extend .round;
   text-transform: uppercase;
   font-family: $roboto-condensed;
   font-weight: 700;
@@ -28,15 +30,15 @@ button, button.secondary, button.alert {
   background-color: $maggi-primary;
   color: white;
   padding: rem-calc(6) rem-calc(20);
-
+  text-decoration: none;
   &:hover, &:focus{
     background-color: $maggi-primary-shade;
+    text-decoration: none;
   }
 }
 
 .button.btn-readmore{
-    background: $maggi-primary;
-    color:$maggi-secondary;
-    
-    padding:10px 30px;
-  }
+  background: $maggi-primary;
+  color:$maggi-secondary;
+  padding:10px 30px;
+}

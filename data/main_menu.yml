@@ -1,15 +1,16 @@
 - title: Home
-  path:
+  path: /
 - title: About Us
   path: /about
 - title: Recipes
   path: /recipes
 - title: Recipe
   path: /recipe
+- title: Recipe Add
+  path: /recipe_add
 - title: News
-  path: news
+  path: /news
 - title: News Detail
-  path: news-detail
-
+  path: /news-detail
 - title: Forum
-  path: forum
+  path: /forum

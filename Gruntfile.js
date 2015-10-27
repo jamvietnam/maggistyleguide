@@ -30,18 +30,18 @@ module.exports = function(grunt) {
       }
     },
     imagemin: {                          // Task
-      // static: {                          // Target
-      //   options: {                       // Target options
-      //     optimizationLevel: 3,
-      //     svgoPlugins: [{ removeViewBox: false }]
-      //     //use: [mozjpeg()]
-      //   },
-      //   files: {                         // Dictionary of files
-      //     '<%= global_vars.dist_dir %>/images/**/*.png': '<%= global_vars.assets_dir %>/images/**/*.png', // 'destination': 'source'
-      //     '<%= global_vars.dist_dir %>/images/**/*.jpg': '<%= global_vars.assets_dir %>/images/**/*.jpg',
-      //     '<%= global_vars.dist_dir %>/images/**/*.gif': '<%= global_vars.assets_dir %>/images/**/*.gif'
-      //   }
-      // },
+      static: {                          // Target
+        options: {                       // Target options
+          optimizationLevel: 3,
+          svgoPlugins: [{ removeViewBox: false }]
+          //use: [mozjpeg()]
+        },
+        files: {                         // Dictionary of files
+          '<%= global_vars.dist_dir %>/images/**/*.png': '<%= global_vars.assets_dir %>/images/**/*.png', // 'destination': 'source'
+          '<%= global_vars.dist_dir %>/images/**/*.jpg': '<%= global_vars.assets_dir %>/images/**/*.jpg',
+          '<%= global_vars.dist_dir %>/images/**/*.gif': '<%= global_vars.assets_dir %>/images/**/*.gif'
+        }
+      },
       dynamic: {                         // Another target
         files: [{
           expand: true,                  // Enable dynamic expansion
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
         files: [
           'Gruntfile.js',
           'templates/**/*',
-          'templates/**/*'
+          '<%= global_vars.dist_dir %>/images/**/*.{png,jpg,gif}'
         ]
       },
       tasks: ['sass'],
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
                 src : [
                     '<%= global_vars.dist_dir %>/<%= global_vars.theme_css %>/*.css',
                     'templates/**/*',
-                    'templates/**/*'
+                    '<%= global_vars.dist_dir %>/images/**/*'
                 ]
             },
             options: {
@@ -106,6 +106,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-  grunt.registerTask('build', ['sass', 'newer:imagemin:all', 'copy']);
+  grunt.registerTask('build', ['sass', 'imagemin', 'copy']);
   grunt.registerTask('default', ['browserSync', 'build', 'watch']);
 }
