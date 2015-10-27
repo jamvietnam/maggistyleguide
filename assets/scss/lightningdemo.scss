@@ -29,7 +29,7 @@
 
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
-// @import "../fonts/foundation-icons/foundation-icons.css";
+
 // Core
 // The following imports bootstrap the theme.
 // You may comment out bourbon if you don't want to use its library of mixins.
@@ -73,7 +73,7 @@
 // Modules
 @import "modules/block";
 @import "modules/button";
-@import "modules/drag_and_drop_upload";
+@import "modules/news";
 
 // States
 @import "states/collapse";

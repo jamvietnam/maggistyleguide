@@ -168,3 +168,22 @@ $input-error-message-font-color-alt: #333;
 
 // Select variables
 $select-bg-color: #fff;
+
+
+.button {
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: rem-calc(24);
+  background-color: $maggi-primary;
+  color: $maggi-secondary;
+
+  &:hover {
+    background-color: $maggi-primary-shade;
+  }
+}
+
+// Using the available options
+.button-maggi  {
+  //padding: rem-calc(20);
+}

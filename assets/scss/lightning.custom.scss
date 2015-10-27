@@ -90,10 +90,10 @@ form {
 }
 
 a {
-  color: $maggi-primary;
+  color: $primary-color;
   transition: all 150ms linear;
   &:hover {
-    color: $maggi-primary-shade;
+    color: $primary-alt;
   }
 }
 
@@ -393,8 +393,4 @@ body {
 
 .dropdown-menu {
   transition: all 300ms linear;
-}
-
-.button {
-
 }

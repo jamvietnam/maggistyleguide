@@ -8,5 +8,8 @@
   path: /recipe
 - title: News
   path: news
-- title: Add Recipe
-  path: recipe_add
+- title: News Detail
+  path: news-detail
+
+- title: Forum
+  path: forum
