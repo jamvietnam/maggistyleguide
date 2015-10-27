@@ -18698,6 +18698,29 @@ a.left-peel:hover:after {
     opacity: 1;
   }
 }
+.card.thread {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.card.thread .avatar .thumbnail {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.card.thread .content p {
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.card.thread .card-link {
+  color: #cc2229;
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
 .button {
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
