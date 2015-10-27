@@ -18702,6 +18702,7 @@ a.left-peel:hover:after {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  margin-bottom: 0;
 }
 .card.thread .avatar .thumbnail {
   display: inline-block;
@@ -18719,6 +18720,10 @@ a.left-peel:hover:after {
   color: #cc2229;
   font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
+}
+.card.thread.comment {
+  background-color: #ffed00;
+  margin-top: 30px;
 }
 
 .button {
