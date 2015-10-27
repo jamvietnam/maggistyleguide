@@ -1,0 +1,12 @@
+- title: Home
+  path:
+- title: About Us
+  path: /about
+- title: Recipes
+  path: /recipes
+- title: Recipe
+  path: /recipe
+- title: News
+  path: news
+- title: Add Recipe
+  path: recipe_add

@@ -1,0 +1,35 @@
+
+.button {
+  @extend .z-depth-1;
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: rem-calc(20);
+  background-color: $maggi-primary;
+  color: $maggi-secondary;
+  text-decoration: none;
+  &:hover {
+    background-color: $maggi-primary-shade;
+  }
+}
+
+// Using the available options
+.button-maggi  {
+  //padding: rem-calc(20);
+}
+
+button, button.secondary, button.alert {
+  @extend button;
+  @extend .round;
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: rem-calc(16);
+  background-color: $maggi-primary;
+  color: white;
+  padding: rem-calc(12) rem-calc(20);
+
+  &:hover {
+    background-color: $maggi-primary-shade;
+  }
+}

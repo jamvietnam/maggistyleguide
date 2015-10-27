@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "vendor": [
+				"assets/scripts/vendor/jquery-ui-1.10.4.custom.min.js",
+        "assets/scripts/vendor/ct-paper-checkbox.js",
+        "assets/scripts/vendor/ct-paper-radio.js",
+				"assets/scripts/vendor/bootstrap-datepicker.js",
+        "assets/scripts/vendor/bootstrap-select.js",
+				"assets/scripts/vendor/float-labels.js",
+        "assets/scripts/vendor/hipster-cards.js",
+				"assets/scripts/vendor/ct-paper.js",
+        "assets/scripts/vendor/classie.js"
+  	  ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "editor-style.css": {
+      "files": [
+        "styles/editor-style.scss"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "modernizr.js": {
+      "bower": ["modernizr"]
+    },
+    "masonry.js": {
+      "bower": ["masonry"]
+    },
+    "bootstrap.js": {
+      "bower": ["bootstrap-sass-official"]
+    }
+  },
+  "config": {
+    "devUrl": "http://styleguide.maggi.dev"
+  }
+}

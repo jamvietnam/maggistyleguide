@@ -1,0 +1,28 @@
+// Grid system
+.main {
+  @include make-sm-column($main-sm-columns);
+  .sidebar-primary & {
+    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+  }
+}
+.sidebar {
+  @include make-sm-column($sidebar-sm-columns);
+}
+/* 
+div[class="row"] {
+    border: 1px dotted rgba(0, 0, 0, 0.5);
+    background-color: rgba(185, 236, 255, 0.2);
+}
+
+div[class^="col-"] {
+  border: 1px dotted rgba(0, 0, 0, 0.5);
+    background-color: rgba(242, 220, 251, 0.2);
+}
+ */
+.gridoverlay div {
+ 	background-color: rgba(242, 220, 251, 0.2);
+ 	border: ($grid-gutter-width / 2) solid rgba(242, 220, 251, 0.1);
+}
+.gridoverlay {
+  margin-left: -($grid-gutter-width / 2);
+}

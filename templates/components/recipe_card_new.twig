@@ -1,0 +1,59 @@
+
+
+        <div class="card">
+
+
+            <div class="image">
+
+                <img src="{{ image }}" alt="{{ title }}"/>
+                <div class="filter">
+                    <button type="button" class="btn btn-neutral btn-simple">
+                        <i class="fa fa-bookmark-o"></i> Bookmark
+                    </button>
+                    <button type="button" class="btn btn-neutral btn-simple">
+                        <i class="fa fa-align-left"></i> Read recipe
+                    </button>
+                </div>
+
+            </div>
+            <div class="content">
+                <p class="category">{{ category }}</p>
+                <a class="card-link" href="#">
+                    <h4 class="title">{{ title }}</h4>
+                </a>
+
+                <div class="footer">
+
+                   <div class="author">
+                       <a class="card-link" href="#">
+                            <img src="includes/gsdp/assets/img/default-avatar.png" alt="{{ author }}." class="avatar">
+                            <span> {{ author }}</span>
+                       </a>
+                   </div>
+                   <div class="stats pull-right">
+                     <i class="fa fa-clock-o"></i> {{ cooktime }}
+                   </div>
+
+                 </div>
+                 <hr>
+                 <div class="footer">
+                    <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+
+                    <div class="stats pull-right">
+                      <i class="fa fa-facebook-square"></i> 23
+                    </div>
+
+                    <div class="stats pull-right">
+                      <i class="fa fa-heart"></i> 221
+                  </div>
+                </div>
+
+             </div>
+        </div> <!-- end card -->
+    
