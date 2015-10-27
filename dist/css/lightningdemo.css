@@ -18027,6 +18027,18 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+.button {
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: #cc2229;
+  color: #ffed00;
+}
+.button:hover {
+  background-color: #ad1d23;
+}
+
 .admin-menu .fixed {
   top: 1.8125rem;
 }
@@ -18686,6 +18698,29 @@ a.left-peel:hover:after {
     opacity: 1;
   }
 }
+.card.thread {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.card.thread .avatar .thumbnail {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.card.thread .content p {
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.card.thread .card-link {
+  color: #cc2229;
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
 .button {
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -18695,8 +18730,9 @@ a.left-peel:hover:after {
   color: #ffed00;
   text-decoration: none;
 }
-.button:hover {
+.button:hover, .button:focus {
   background-color: #ad1d23;
+  text-decoration: none;
 }
 
 button, button.secondary, button.alert, .droppable-browse-button, button.secondary, .secondary.droppable-browse-button, button.alert, .alert.droppable-browse-button {
@@ -18706,10 +18742,101 @@ button, button.secondary, button.alert, .droppable-browse-button, button.seconda
   font-size: 1rem;
   background-color: #cc2229;
   color: white;
-  padding: 0.75rem 1.25rem;
+  padding: 0.375rem 1.25rem;
+  text-decoration: none;
 }
-button:hover, .droppable-browse-button:hover, button.secondary:hover, .secondary.droppable-browse-button:hover, button.alert:hover, .alert.droppable-browse-button:hover {
+button:hover, .droppable-browse-button:hover, button:focus, .droppable-browse-button:focus, button.secondary:hover, .secondary.droppable-browse-button:hover, button.secondary:focus, .secondary.droppable-browse-button:focus, button.alert:hover, .alert.droppable-browse-button:hover, button.alert:focus, .alert.droppable-browse-button:focus {
   background-color: #ad1d23;
+  text-decoration: none;
+}
+
+.button.btn-readmore {
+  background: #cc2229;
+  color: #ffed00;
+  padding: 10px 30px;
+}
+
+.text-red {
+  color: #cc2229;
+}
+
+.hero-bg .page-header {
+  font-size: 3em;
+  border: 0;
+  text-shadow: 1px 1px 5px black;
+}
+.hero-bg .page-header.alternate {
+  color: #ffed00;
+}
+
+.news {
+  margin-bottom: 40px;
+}
+.news .image {
+  border: 8px solid #fff;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 5px -1px #a6a6a6;
+  -moz-box-shadow: 2px 2px 5px -1px #a6a6a6;
+  box-shadow: 2px 2px 5px -1px #a6a6a6;
+}
+.news .bagde {
+  background: #cc2229;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  z-index: 1;
+  padding: 3% 10px;
+  text-align: center;
+  color: #ffed00;
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
+}
+.news .bagde:after {
+  background: transparent;
+  content: '';
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 100px solid transparent;
+  border-top: 15px solid #cc2229;
+  bottom: -15px;
+  position: absolute;
+  left: 0;
+}
+.news .title {
+  color: #cc2229;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.news .meta {
+  color: #ccc;
+  font-size: 0.875em;
+  margin-bottom: 5px;
+}
+.news .description {
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.news .footer .right {
+  color: #333;
+}
+.news.featured .title {
+  margin-top: 20px;
+}
+
+/* NEWS DETAIL*/
+.post header .title {
+  font-size: 3em;
+}
+.post .post-content, .post .post-content p {
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.post .post-content a {
+  color: #cc2229;
+  font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 .droppable-browse-button {
